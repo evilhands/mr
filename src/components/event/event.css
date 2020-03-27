@@ -1,0 +1,32 @@
+section{
+    margin-top: 5%;
+}
+
+.support{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+.facts{
+    font-size: 0.7em;
+    margin: auto;
+    text-align: center;
+}
+
+.containerEvent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ /* article img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+} */
+
+/* section{
+    margin-top: 5%;
+} */

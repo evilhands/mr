@@ -1,0 +1,13 @@
+.containerTeam{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerTeam article{
+    text-align: center;
+}
+
+.containerTeam article a{
+    color: #000;
+}

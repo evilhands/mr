@@ -1,32 +1,26 @@
 @font-face{
     font-family: mr_100;
-    src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 6.ttf)
+    src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 6.ttf);
+    font-display: swap;
 }
 
 @font-face{
     font-family: mr_100_r;
-    src:url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 12.ttf)
+    src:url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 12.ttf);
+    font-display: swap;
 }
 
 @font-face{
     font-family: mr_140;
-    src: local('Arial'), url(..//font/Schriftlabor\ -\ strokeWeight\ 140.ttf)
+    src: local('Arial'), url(..//font/Schriftlabor\ -\ strokeWeight\ 140.ttf);
+    font-display: swap;
 }
-
-/* @font-face{
-    font-family: mr_140_r;
-    src:url(../font/Schriftlabor\ -\ strokeWeight\ 140\ rotate\ -12.ttf)
-} */
 
 @font-face{
     font-family: mr_180;
-    src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 180.ttf)
+    src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 180.ttf);
+    font-display: swap;
 }
-
-/* @font-face{
-    font-family: mr_180_r;
-    src: url(../font/Schriftlabor\ -\ strokeWeight\ 180\ rotate\ -12.ttf)
-} */
 
 body{
     font-family: mr_140;

@@ -1,17 +1,22 @@
-footer{
-    margin-top: 5%;
-    background: #000;
+footer {
+  margin-top: 5%;
+  background: #000;
+}
+
+nav.footer ul li a {
+  color: #fff;
+}
+
+.containerFooter {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerFooterImg .logo {
+    width: 51%;
 }
 
 
-nav.footer ul li a{
-    color: #FFF;;
-}
-
-.containerFooter{
-    padding: 2%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between
-}

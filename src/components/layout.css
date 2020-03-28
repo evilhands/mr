@@ -2,11 +2,11 @@
     font-family: mr_100;
     src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 6.ttf)
 }
-/* 
+
 @font-face{
     font-family: mr_100_r;
     src:url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 12.ttf)
-} */
+}
 
 @font-face{
     font-family: mr_140;

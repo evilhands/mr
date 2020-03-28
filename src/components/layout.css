@@ -1,32 +1,32 @@
 @font-face{
     font-family: mr_100;
-    src:url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 6.ttf)
+    src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 6.ttf)
 }
-
+/* 
 @font-face{
     font-family: mr_100_r;
     src:url(../font/Schriftlabor\ -\ strokeWeight\ 100\ rotate\ 12.ttf)
-}
+} */
 
 @font-face{
     font-family: mr_140;
-    src:url(..//font/Schriftlabor\ -\ strokeWeight\ 140.ttf)
+    src: local('Arial'), url(..//font/Schriftlabor\ -\ strokeWeight\ 140.ttf)
 }
 
-@font-face{
+/* @font-face{
     font-family: mr_140_r;
     src:url(../font/Schriftlabor\ -\ strokeWeight\ 140\ rotate\ -12.ttf)
-}
+} */
 
 @font-face{
     font-family: mr_180;
-    src: url(../font/Schriftlabor\ -\ strokeWeight\ 180.ttf)
+    src: local('Arial'), url(../font/Schriftlabor\ -\ strokeWeight\ 180.ttf)
 }
 
-@font-face{
+/* @font-face{
     font-family: mr_180_r;
     src: url(../font/Schriftlabor\ -\ strokeWeight\ 180\ rotate\ -12.ttf)
-}
+} */
 
 body{
     font-family: mr_140;
@@ -64,4 +64,15 @@ h2, h3{
     max-width: 120rem;
     width: 80%;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 425px){
+    
+    h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1em;
+    }
 }

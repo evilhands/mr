@@ -31,8 +31,9 @@ const Event = () => (
         }
       }`
     } render={data => (
+      <> {data.allContentfulEvent.nodes.map(node => (
         <div className="containerEvent container">
-            {data.allContentfulEvent.nodes.map(node => (
+           
                 <article className="event">
                     <h3>{node.eventDate}</h3>
                     <a href={node.flyerLink}
@@ -51,9 +52,10 @@ const Event = () => (
                         <p>AK {node.ak}€</p>
                     </div>
                 </article>
-            ))
-            }
         </div>
+         ))
+        }
+        </>
     )}
     />
 )

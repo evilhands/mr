@@ -26,7 +26,7 @@ const Contact = () => (
                 {data.allContentfulContact.nodes.map(node => (
                     <section id="contact">
                         <h2>Kontakt</h2>
-                        <div className="containerTeam">
+                        <div className="containerTeam container">
                             {node.contactperson.map(contact => (
                                 <article>
                                     <img src={contact.picture.file.url} alt={contact.picture.title} />

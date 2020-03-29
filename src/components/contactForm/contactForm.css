@@ -2,12 +2,12 @@
     display: none;
 }
 
-.contactForm{
+.contactFormContainer{
     background-color: #D3D3D3;
     padding: 10px;
 }
 
-.contactForm input, .contactForm textarea{
+.contactFormContainer input, .contactFormContainer textarea{
     width: 100%;
     outline: none;
     border: none;
@@ -21,12 +21,12 @@
     margin-bottom: 10px;
 }
 
-.contactForm input{
+.contactFormContainer input{
     line-height: 24px;
     font-weight: 700;
 }
 
-.contactForm input:focus, .contactForm textarea:focus{
+.contactFormContainer input:focus, .contactFormContainer textarea:focus{
     border-bottom: 1px solid red;
 }
 

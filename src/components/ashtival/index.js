@@ -7,6 +7,7 @@ const Ashtival = () => (
     <StaticQuery query={graphql`query AshtivalQuery {
         allContentfulAshtival {
           nodes {
+            id
             title
           }
         }
@@ -15,10 +16,10 @@ const Ashtival = () => (
         render={data => (
             <>
                 {data.allContentfulAshtival.nodes.map(node => (
-                    <section id="ashtival">
+                    <section id="ashtival" key={node.id}>
                         <h2>Ashtival</h2>
-                        <div class="container">
-                            <div class="facts">
+                        <div className="container">
+                            <div className="facts">
                                 {node.title}
                             </div>
                         </div>

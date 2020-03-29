@@ -3,46 +3,42 @@ import { StaticQuery } from "gatsby"
 import "./about.css"
 
 const About = () => (
-
-    <StaticQuery query={graphql`query AboutQuery {
+  <StaticQuery
+    query={graphql`
+      query AboutQuery {
         allContentfulAbout {
-          edges {
-            node {
-              header
-              childContentfulAboutTextRichTextNode {
+          nodes {
+            childContentfulAboutTextRichTextNode {
+              id
+              content {
                 content {
-                  content {
-                    value
-                  }
+                  value
                 }
               }
             }
+            id
+            header
           }
         }
-      }`}
-        render={data => (
-            <section id="about">
-                {data.allContentfulAbout.edges.map(edge => (
-                    <article>
-                        <p className="header">
-                            {edge.node.header}
-                        </p>
-                        {edge.node.childContentfulAboutTextRichTextNode.content.map(node => (
-                            <div>
-                                {node.content.map(contents => (
-                                    <p>
-                                        {contents.value}
-                                    </p>
-
-                                ))}
-                                 {node.text}
-                            </div>
-                        ))}
-                    </article>
+      }
+    `}
+    render={data => (
+      <section id="about">
+        {data.allContentfulAbout.nodes.map(node => (
+          <article key={node.id}>
+            <p className="header">{node.header}</p>
+            {node.childContentfulAboutTextRichTextNode.content.map((texts, i) => (
+              <div key={i}>
+                {texts.content.map(text => (
+                  <p key={text.value}>{text.value}</p>
                 ))}
-            </section>
-        )}
-    />
+              </div>
+            ))}
+          </article>
+        ))}
+      </section>
+    )}
+  />
 )
 
 export default About

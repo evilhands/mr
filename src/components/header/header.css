@@ -1,5 +1,5 @@
 /* responsive - burger menu */
-.header label {
+.containerHeader label {
   margin: 0;
   font-size: 26px;
   line-height: 70px;
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 @media only screen and (max-width: 1100px) {
-  .header label {
+  .containerHeader label {
     display: block;
     cursor: pointer;
   }

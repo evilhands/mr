@@ -7,7 +7,9 @@ const Contact = () => (
     <StaticQuery query={graphql`query ContactQuery {
         allContentfulContact {
           nodes {
+            id
             contactperson {
+              id
               fullname
               role
               picture {
@@ -24,11 +26,11 @@ const Contact = () => (
         render={data => (
             <>
                 {data.allContentfulContact.nodes.map(node => (
-                    <section id="contact">
+                    <section id="contact" key={node.id}>
                         <h2>Kontakt</h2>
                         <div className="containerTeam container">
                             {node.contactperson.map(contact => (
-                                <article>
+                                <article key={contact.id}>
                                     <img src={contact.picture.file.url} alt={contact.picture.title} />
                                     <p className="name">{contact.fullname}</p>
                                     <p className="prof">{contact.role}</p>

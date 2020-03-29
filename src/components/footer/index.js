@@ -8,6 +8,7 @@ const Footer = () => (
       query FooterLogoQuery {
         allContentfulLogos {
           nodes {
+            id
             footer {
               file {
                 url
@@ -20,13 +21,13 @@ const Footer = () => (
     render={data => (
       <footer>
         {data.allContentfulLogos.nodes.map(node => (
-          <div class="containerFooter">
-            <div class="containerFooterImg">
-              <img class="logo" src={node.footer.file.url} alt="logo" />
+          <div className="containerFooter" key={node.id}>
+            <div className="containerFooterImg">
+              <img className="logo" src={node.footer.file.url} alt="logo" />
             </div>
-            <nav class="footer">
+            <nav className="footer">
               <ul>
-                <li class="nav-item">
+                <li className="nav-item">
                   <Link to="/impressum" aria-label="impressum">
                     Impressum
                   </Link>

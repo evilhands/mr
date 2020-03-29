@@ -10,6 +10,7 @@ const Event = () => (
         (sort: {fields: eventDate})
         {
           nodes {
+            id
             ak
             vvk
             vvkLink
@@ -24,6 +25,7 @@ const Event = () => (
               }
             }
             band {
+              id
               website
               name
             }
@@ -32,22 +34,21 @@ const Event = () => (
       }`
     } render={data => (
       <> {data.allContentfulEvent.nodes.map(node => (
-        <div className="containerEvent container">
-           
+        <div className="containerEvent container" key={node.id}>
                 <article className="event">
                     <h3>{node.eventDate}</h3>
                     <a href={node.flyerLink}
                         aria-label={node.flyerLinkDescription}><img src={node.flyer.file.url}
                             alt={node.flyerDescription} />
                     </a>
-                    <div class="support">
+                    <div className="support">
                     {node.band.map(bands => (
-                        <p><a href={bands.website} aria-label={bands.name}>
+                        <p key={bands.id}><a href={bands.website} aria-label={bands.name}>
                             {bands.name}
                         </a></p>
                     ))}
                     </div>
-                    <div class="facts">
+                    <div className="facts">
                         <p><a href={node.vvkLink} aria-label={node.vvkLinkDescription}>VVK {node.vvk}€</a></p>
                         <p>AK {node.ak}€</p>
                     </div>

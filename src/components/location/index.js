@@ -8,6 +8,7 @@ const Location = () => (
     query LccationQuery {
         allContentfulLocation {
           nodes {
+            id
             picture {
               file {
                 url
@@ -22,9 +23,9 @@ const Location = () => (
         render={data => (
             <>
                 {data.allContentfulLocation.nodes.map(node => (
-                    <section id="location">
+                    <section id="location" key={node.id}>
                         <h2>Location</h2>
-                        <div class="container">
+                        <div className="container">
                             <img src={node.picture.file.url} alt={node.picture.title}/>
                         </div>
                     </section>

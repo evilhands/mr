@@ -20,7 +20,7 @@ header {
   padding-top: 5%;
 }
 
-.header {
+.containerHeader {
   overflow: hidden;
   display: flex;
   justify-content: space-between;

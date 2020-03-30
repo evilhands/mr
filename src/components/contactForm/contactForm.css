@@ -34,3 +34,22 @@
     text-align: center;
     /* padding: 30px 0; */
 }
+
+select{
+    background-color: #fff;
+    border: none;
+    width: 90%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+.to{
+    margin-bottom: 10px;
+}
+
+.thankYou{
+    display: none;
+}

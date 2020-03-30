@@ -16,8 +16,8 @@ const ContactForm = () => (
             <label htmlFor="bot">Don't fill this out, humman</label>
             <input name="bot" />
           </div>
-          <div>
-            <label htmlFor="reason">An</label>
+          <div className="to">
+            <label htmlFor="reason">An: </label>
             <select id="reason" >
               <option value="vorstand">Vorstand</option>
               <option value="booking">Booking</option>
@@ -44,8 +44,5 @@ const ContactForm = () => (
 
 export default ContactForm
 
-  // changeRequest(){
-  //   console.log("event");
-  // };
 
 

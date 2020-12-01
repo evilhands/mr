@@ -1,4 +1,4 @@
-name: Gatsby Publish
+name: Publish
 
 on:
   push:
@@ -13,5 +13,6 @@ jobs:
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.GENERATOR }}
-          deploy-branch: gh-pages
+          deploy-branch: master
+          gatsby-args: --prefix-paths
           skip-publish: true

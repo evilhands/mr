@@ -1,10 +1,8 @@
 name: Publish
-
 on:
   push:
     branches:
       - master
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,5 +12,4 @@ jobs:
         with:
           access-token: ${{ secrets.GENERATOR }}
           deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
           skip-publish: true
